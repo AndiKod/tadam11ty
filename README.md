@@ -230,9 +230,6 @@ When ready to publish, make your repository Public if actually private, and hit 
 <br/>
 
 
-
-
-
 <br/>
 
 ---
