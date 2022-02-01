@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="icon" type="image/x-icon" href="{{ "/assets/img/tadam.ico" | url }}">
+ 
+  {% include 'pkg/granim.njk' %}
+  {% include 'pkg/windi.njk' %}
+  
+  <script src="{{ '/assets/js/main.js' | url }}" defer></script>
+</head>
+<body class="bg-gray-700 text-sky-50">
+  <div class="page">
+    {% include 'components/Header.njk' %}
+    <main class="justify-self-start">
+      {{ content | safe }}
+    </main>
+  </div>
+</body>
+</html>

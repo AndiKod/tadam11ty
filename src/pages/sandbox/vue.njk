@@ -1,0 +1,26 @@
+---
+title: "Vue:Fluffy"
+permalink: "/vue/"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  {% include 'pkg/milligram.njk' %}
+  {% include 'pkg/windi.njk' %}
+</head>
+<body>
+<a href="{{ "/sandbox" | url }}"> <- Sandbox</a>
+
+  <div class="App"></div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="{{ "/assets/js/sandbox/vueApp.js" | url }}"></script>
+</body>
+</html>
+  
+

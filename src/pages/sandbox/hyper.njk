@@ -1,0 +1,55 @@
+---
+title: "Hyper"
+permalink: "/hyper/"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  {% include "pkg/hyperscript.njk" %}
+  {% include 'pkg/milligram.njk' %}
+  {% include 'pkg/windi.njk' %}
+</head>
+<body class="p-8">
+<a href="{{ "/sandbox" | url }}"> <- Sandbox</a>
+
+<main class="App">
+
+  <h1>_Hyperscript</h1>
+  <button _="
+  on click hide the previous <h1/>
+  hide the next <code/>
+  wait 2s
+  show the previous <h1/>
+  wait 1s
+  show the next <code/>"
+  class="mt-6 mb-8">
+    Peekaboo!
+  </button>
+
+  <pre><code>
+  on click hide the previous &lt;h1/>
+  hide the next &lt;code/>
+  wait 2s
+  show the previous &lt;h1/>
+  wait 1s
+  show the next &lt;code/>
+  </code></pre>
+  
+</main>
+
+
+<script type="text/hyperscript">
+  on mousedown
+    halt the event -- prevent text selection...
+    wait 2s -- set timeout on 2sec
+    log "Hello Hyperscript" -- nice & short console.log("")
+  end
+</script>
+  
+</body>
+</html>

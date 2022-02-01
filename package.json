@@ -1,0 +1,27 @@
+{
+  "name": "Fluffy",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "w:sass": "sass --watch src/assets/styles:_site/css",
+    "b:sass": "sass src/assets/styles:_site/css",
+    "w:eleventy": "eleventy --serve --quiet",
+    "b:eleventy": "eleventy",
+    "w:windi": "cross-env  postcss src/assets/styles/windi.css -o _site/css/windi.css -w",
+    "b:windi": "cross-env postcss src/assets/styles/windi.css -o _site/css/windi.css",
+    "dev": "cross-env NODE_ENV=development npm-run-all clean b:sass b:eleventy --parallel w:sass w:eleventy w:windi",
+    "build": "cross-env NODE_ENV=production npm-run-all clean b:sass b:eleventy b:windi"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "postcss-windicss": "^1.0.0",
+    "@11ty/eleventy": "^1.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.47.0"
+  }
+}
