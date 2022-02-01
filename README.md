@@ -79,6 +79,7 @@ Lightweight and modular front-end framework
 Files are located in `src/assets/sass`.
 
 <br/>
+
 ---
 [TopNav](#readme-sections)
 <br/><br/>
@@ -223,16 +224,16 @@ When ready to publish, make your repository Public if actually private, and hit 
 
 ## Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AndiKod/azkaban)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AndiKod/tadam-11ty)
 
 <br/>
 
 ## Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AndiKod/azkaban)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AndiKod/tadam-11ty)
 <br/>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0c9e9f60-62c5-482a-bd3f-508cdc624e27/deploy-status)](https://app.netlify.com/sites/pensive-colden-8e5f7b/deploys)
+
 
 
 
