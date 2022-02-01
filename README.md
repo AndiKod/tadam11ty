@@ -134,10 +134,6 @@ Library that brings database features into your project
 It helps with formatting input text content automatically.
 
 
-
-
-
-
 <br/>
 
 ---
