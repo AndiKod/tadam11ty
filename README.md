@@ -216,11 +216,17 @@ Create *shortcodename.js* with the logic, then in *.eleventy.js*
 
 # One click Deploy buttons
 
-When ready to publish, make your repository Public if actually private, and hit one of those buttons:
+When ready to publish, make your repository Public if actually private, replace the repo name by yours, ...and hit one of those buttons.
+
+
 
 ## Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AndiKod/tadam-11ty)
+
+```
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AndiKod/tadam-11ty)
+```
 
 <br/>
 
@@ -229,6 +235,9 @@ When ready to publish, make your repository Public if actually private, and hit 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AndiKod/tadam-11ty)
 <br/>
 
+```
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AndiKod/tadam-11ty)
+```
 
 <br/>
 
