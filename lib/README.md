@@ -1,61 +1,110 @@
-# Make your 11ty life easier
-... by extending 11ty with filters, shortcodes and paired ones.
+# The Sandbox libstore
 
-To keep the `.eleventy.js` clean, all the functions are stored here, like `lib/shortcodes/youtube.js`. In case we need that tool, a single line in the config file will activate it:
+During the prototyping, researches, or playground moments we should  be able to quickly test something new... without yarn/npm installing things yet.  
 
- ```eleventyConfig.addShortcode('YouTube', require('./lib/shortcodes/youtube'));``` 
- 
- Now we can in pages/layouts go: 
- 
- ```{% YouTube {video: "xh5VideoId5hx"} %}``` 
+Heard that AlpineJS is cool and need some default styling while testing? Make a new page, in the &lt;head> section throw the links, and have fun.
 
- <br />
+```
+{% include 'pkg/alpine.njk' %}
+{% include 'pkg/bulma.njk' %}
+```
+At any moment you can add, change, remove libraries to test out concepts without complicating things. 
 
-- **[Filters](#filters)**
-- [limit](#limit)
-- **[Shortcodes](#filters)**
-- [YouTube](#youtube)
+Once happy, you sure can delete the *includes* and install into your `package.json` the chosen and proven tech stack for your project.
 
-<br />
-<hr>
+<br/>
 
-## [Filters](#filters) 
-*[11ty.dev/docs/filters/](11ty.dev/docs/filters/)*
+---
+[TopNav](#readme-sections)
+<br/><br/>
 
-#### Creation
-Create *filtername.js* with the logic, then in *.eleventy.js*
-```eleventyConfig.addFilter('FilterName', require('./lib/filters/filtername'));```
+## Styling 
+Un petit paragraphe pour équilibrer le coté JS
+assez long pour en faire deux lignes 
 
-#### Usage 
-```{{ someString | FilterName }} ``` or<br/> 
-```{% for post in collections.posts | FilterName %}``` 
+### Installed out of the box
 
-## Filters that comes with **Fluffy**
+- [SASS]() already included<br/>
+CSS with super powers.
+- [WindiCSS]() already included<br/>
+Next generation utility-first CSS framework.
 
-> ### limit 
-> *File:* arr-res-limit.js <br/> 
-> *Effect:* Takes an arrays and returns the n-th most recent items <br/>
-> *Usage:* `{% for post in collections.posts | limit(-3) %}` <br/>
-> *Info:* It's the filter used on the official blog-starter project.
+### Alternative CSS frameworks
 
-<hr>
+- [Bootstrap](https://getbootstrap.com)<br/>
+World’s most popular front-end toolkit 
+- [Foundation for Sites](https://get.foundation/sites/docs/)<br/>
+Advanced responsive front-end framework
+- [Bulma](https://bulma.io/documentation/)<br/>
+The modern CSS framework that just works.
+- [Milligram](https://milligram.io)<br/>
+A minimalist CSS framework
+- [UIKit](https://getuikit.com/docs/introduction)<br/>
+Lightweight and modular front-end framework
 
-## [Shortcodes](#shortcodes) 
-*[11ty.dev/docs/shortcodes/](11ty.dev/docs/shortcodes/)*
 
-### Creation
-Create *shortcodename.js* with the logic, then in *.eleventy.js*
-```eleventyConfig.addShortcode('ShortcodeName', require('./lib/filters/filtername'));```
 
-### Usage 
-```{{ someString | ShortcodeName }} ``` or<br/> 
-```{% for post in collections.posts | ShortcodeName %}``` 
+<br/>
 
-## Shortcodes that comes with **Fluffy**
 
-> ### YouTube 
-> *File:* youtube.js <br/> 
-> *Effect:* Insert a video on the page <br/>
-> *Usage:* `{% YouTube { video: 'xXxVidIDxXx' } %}` <br/>
-> *Info:* The video will take 100% width of it's container
+### SASS works *out of the box*
 
+Files are located in `src/assets/sass`.
+
+<br/>
+
+---
+[TopNav](#readme-sections)
+<br/><br/>
+
+## JavaScript
+
+In addition to the JS functions provided by some CSS frameworks, there are also a selection of JS libs to help with the development or play around in sandbox.
+
+
+
+- [React](https://mithril.js.org)<br/>
+Modern client-side JavaScript framework
+- [Vue 3](https://mithril.js.org)<br/>
+Modern client-side JavaScript framework
+- [AlpineJS](https://alpinejs.dev/start-here)<br/>
+Your new, lightweight, JavaScript framework
+- [Mithril](https://mithril.js.org)<br/>
+Modern client-side JavaScript framework
+- [Hyperscript](https://hyperscript.org/docs)
+Fun and readable, dependency-free DOM manipulation library & more
+
+
+
+- [ChartJS](https://www.chartjs.org/docs/latest/)<br/>
+Simple yet flexible JavaScript charting
+- [ApexCharts](https://apexcharts.com/docs/creating-first-javascript-chart/)<br/>
+Modern & Interactive Open-source Charts
+- [AnimateOnScroll](https://michalsnik.github.io/aos/)<br/>
+Animate On Scroll Library
+- [Granim](https://sarcadass.github.io/granim.js/examples.html)<br/>
+Fluid and interactive gradient animations library
+- [Leaflet](https://leafletjs.com/reference.html)<br/>
+JavaScript library for mobile-friendly interactive maps
+
+- [Moment](https://momentjs.com)<br/>
+Parse, validate, manipulate,and display dates and times
+- [Luxon](https://moment.github.io/luxon/#/)<br/>
+Modern, and friendly wrapper for JavaScript dates and times
+
+- [UmbrellaJS](https://umbrellajs.com/documentation)<br/>
+Tiny library for DOM manipulation and events
+
+- [jQuery Core](https://learn.jquery.com/using-jquery-core/)<br/>
+jQuery is a fast, small, and feature-rich JavaScript library.
+- [Voca](https://vocajs.com/#)<br/>
+The ultimate JavaScript string library
+- [Lodash](https://lodash.com/docs/4.17.15)<br/>
+JS utility library delivering modularity, performance & extras
+- [TaffyDB](https://taffydb.com)<br/>
+Library that brings database features into your project
+- [Cleave](https://nosir.github.io/cleave.js/)<br/>
+It helps with formatting input text content automatically.
+
+
+<br/>
