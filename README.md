@@ -1,7 +1,7 @@
 # Tadam11ty
 ## DevSandbox — 11ty Starter
 
-Have an idea, a web project, want to learn of just have fun? ...Tadaaam! jobDone!
+Have an idea, a web project, want to learn of just have fun? ...TADAAAM! jobDone!
 
 <br>
 
@@ -220,13 +220,13 @@ When ready to publish, make your repository Public if actually private, and hit 
 
 ## Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AndiKod/tadam-11ty)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AndiKod/tadam11ty)
 
 <br/>
 
 ## Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AndiKod/tadam-11ty)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AndiKod/tadam11ty)
 <br/>
 
 
