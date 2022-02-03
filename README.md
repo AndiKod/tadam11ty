@@ -1,8 +1,9 @@
 # Tadam11ty
+<br>
 
 ## DevSandbox — 11ty Starter
 
-Have an idea, a web project, want to learn of just have fun? ...TADAAAM! jobDone!
+Have an idea, a project, want to learn or just have fun? ...TADAAAM! jobDone!
 
 <br>
 
@@ -47,8 +48,7 @@ Once happy, you sure can delete the *includes* and install into your `package.js
 <br/><br/>
 
 ## Styling 
-Un petit paragraphe pour équilibrer le coté JS
-assez long pour en faire deux lignes 
+You sometimes just need some basic styling while working on things like getting the data out and see if it prints on the screen, without staring at an ugly page. On the other hand, it's also interesting to test several frameworks when prototyping frontend part.
 
 ### Installed out of the box
 
@@ -69,6 +69,7 @@ The modern CSS framework that just works.
 A minimalist CSS framework
 - [UIKit](https://getuikit.com/docs/introduction)<br/>
 Lightweight and modular front-end framework
+- *...and some more minimal or "no class" soon.*
 
 <br/>
 
@@ -179,7 +180,7 @@ Create *shortcodename.js* with the logic, then in *.eleventy.js*
 ```eleventyConfig.addShortcode('ShortcodeName', require('./lib/filters/filtername'));```
 
 ### Usage 
-```{{ codeName { propName: 'propValue' } }} ``` 
+```{% codeName { propName: 'propValue' } %} ``` 
 
 <br/>
 
