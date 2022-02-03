@@ -1,4 +1,5 @@
 # Tadam11ty
+
 ## DevSandbox — 11ty Starter
 
 Have an idea, a web project, want to learn of just have fun? ...Tadaaam! jobDone!
@@ -69,15 +70,6 @@ A minimalist CSS framework
 - [UIKit](https://getuikit.com/docs/introduction)<br/>
 Lightweight and modular front-end framework
 
-
-
-<br/>
-
-
-### SASS works *out of the box*
-
-Files are located in `src/assets/sass`.
-
 <br/>
 
 ---
@@ -86,13 +78,13 @@ Files are located in `src/assets/sass`.
 
 ## JavaScript
 
-In addition to the JS functions provided by some CSS frameworks, there are also a selection of JS libs to help with the development or play around in sandbox.
+React and Vue can be used for small components, SPA, or just prototyping and playing around, can't do more, but it's still fun to have them. In one way or another, all the libraries can help in some projects or filters/extensions/etc crafting. Charts, maps, animation, date handling, DOM manipulation/interactivity, and more. 
 
 
 
-- [React](https://mithril.js.org)<br/>
+- [React](https://reactjs.org/docs/getting-started.html)<br/>
 Modern client-side JavaScript framework
-- [Vue 3](https://mithril.js.org)<br/>
+- [Vue 3](https://v3.vuejs.org/guide/introduction.html)<br/>
 Modern client-side JavaScript framework
 - [AlpineJS](https://alpinejs.dev/start-here)<br/>
 Your new, lightweight, JavaScript framework
@@ -100,9 +92,6 @@ Your new, lightweight, JavaScript framework
 Modern client-side JavaScript framework
 - [Hyperscript](https://hyperscript.org/docs)
 Fun and readable, dependency-free DOM manipulation library & more
-
-
-
 - [ChartJS](https://www.chartjs.org/docs/latest/)<br/>
 Simple yet flexible JavaScript charting
 - [ApexCharts](https://apexcharts.com/docs/creating-first-javascript-chart/)<br/>
@@ -113,15 +102,12 @@ Animate On Scroll Library
 Fluid and interactive gradient animations library
 - [Leaflet](https://leafletjs.com/reference.html)<br/>
 JavaScript library for mobile-friendly interactive maps
-
 - [Moment](https://momentjs.com)<br/>
 Parse, validate, manipulate,and display dates and times
 - [Luxon](https://moment.github.io/luxon/#/)<br/>
 Modern, and friendly wrapper for JavaScript dates and times
-
 - [UmbrellaJS](https://umbrellajs.com/documentation)<br/>
 Tiny library for DOM manipulation and events
-
 - [jQuery Core](https://learn.jquery.com/using-jquery-core/)<br/>
 jQuery is a fast, small, and feature-rich JavaScript library.
 - [Voca](https://vocajs.com/#)<br/>
@@ -142,7 +128,7 @@ It helps with formatting input text content automatically.
 
 # Eleventy extensions collection
 
-To keep the `.eleventy.js` clean, all the functions are stored in the *lib* folder, like `lib/shortcodes/youtube.js`. In case we need that tool, a single line in the config file will activate it:
+To keep the `.eleventy.js` clean, all the functions are stored in the *lib* folder, like `lib/shortcodes/youtube.js`. In case we need something, a single line in the config file will activate it:
 
 ```eleventyConfig.addShortcode('YouTube', require('./lib/shortcodes/youtube'));``` 
 
@@ -216,11 +202,13 @@ Create *shortcodename.js* with the logic, then in *.eleventy.js*
 
 # One click Deploy buttons
 
-When ready to publish, make your repository Public if actually private, and hit one of those buttons:
+When ready to publish, make your repository Public if actually private, place your own *user/repo* in the buttons code, and hit one of them:
 
 ## Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AndiKod/tadam-11ty)
+
+```[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/user/repo)```
 
 <br/>
 
@@ -229,8 +217,11 @@ When ready to publish, make your repository Public if actually private, and hit 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AndiKod/tadam-11ty)
 <br/>
 
+```[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/user/repo)```
 
 <br/>
+
+...if you forget to customise the button, it will obviously build a fresh Tadam instead, so don't ;)
 
 ---
 [TopNav](#readme-sections)
