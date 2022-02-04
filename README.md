@@ -1,7 +1,13 @@
-# Tadam11ty
-<br>
 
-## DevSandbox — 11ty Starter
+
+<p style="text-align:center">
+<img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:50%" />
+</p>
+
+<div style="text-align:center">
+<h2> DevSandbox — 11ty Starter </h2>
+</div>
+ 
 
 Have an idea, a project, want to learn or just have fun? ...TADAAAM! jobDone!
 
