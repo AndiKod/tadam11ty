@@ -1,10 +1,10 @@
 
 
-<p style="text-align:center">
-<img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:50%; display:block;margin: 0 auto;" />
-</p>
+<p align="center">
+    <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">
+ </p>
 
-<div style="text-align:center">
+<div style="align:center">
 <h2> DevSandbox — 11ty Starter </h2>
 </div>
  
