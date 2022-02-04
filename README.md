@@ -1,15 +1,9 @@
 
 
-<p align="center">
-    <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">
-    <h2 style="align:center"> DevSandbox — 11ty Starter </h2>
+ <p align="center">
+    <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">  
  </p>
-
-
-
-
- 
-
+ <h2> DevSandbox — 11ty Starter </h2>
 Have an idea, a project, want to learn or just have fun? ...TADAAAM! jobDone!
 
 <br>
