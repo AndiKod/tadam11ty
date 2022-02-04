@@ -2,10 +2,11 @@
 
 <p align="center">
     <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">
+    <h2 style="align:center"> DevSandbox — 11ty Starter </h2>
  </p>
 
 
-<h2 style="align:center"> DevSandbox — 11ty Starter </h2>
+
 
  
 
