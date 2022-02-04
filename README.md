@@ -1,7 +1,7 @@
 
 
 <p style="text-align:center">
-<img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:50%" />
+<img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:50%; display:block;margin: 0 auto;" />
 </p>
 
 <div style="text-align:center">
