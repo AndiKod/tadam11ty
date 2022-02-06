@@ -67,28 +67,51 @@ You sometimes just need some basic styling while working on things like getting 
 
 <br/>
 
-<details><summary><b>See the 7 Available CSS Flavors:</b></summary>
+<details><summary><b>See the 13 Available CSS Flavors:</b></summary>
+
+<br>
 
 ### Installed out of the box
 
 - [SASS]() already included<br/>
 CSS with super powers.
 - [WindiCSS]() already included<br/>
-Next generation utility-first CSS framework.
+Next generation utility-first CSS framework.<br/>
+Tailwind compatible syntax, plus other features.
 
 ### Alternative CSS frameworks
 
+Utility first and similar approaches
+
+- [Tachyons](http://tachyons.io/docs/)
+Built for designing. *...with as little css as possible.*
+- [Tailwind](https://tailwindcss.com/docs/installation/play-cdn)
+The "Play CDN" setup for testing and prototyping 
+- [OpenProps](https://open-props.style/#getting-started)
+Supercharged CSS variables
+
+No classes, Just raw HTML
+- [Water.css](https://watercss.kognise.dev)
+A drop-in collection of CSS styles
+- [MVP.css](https://andybrewer.github.io/mvp/#docs)
+A minimalist stylesheet for HTML elements
+
+Minimalist frameworks
+- [Milligram](https://milligram.io)<br/>
+A minimalist CSS framework
+- [Chota](https://jenil.github.io/chota/)
+A micro (~3kb) CSS framework.
+
+The classics
 - [Bootstrap](https://getbootstrap.com)<br/>
 World’s most popular front-end toolkit 
 - [Foundation for Sites](https://get.foundation/sites/docs/)<br/>
 Advanced responsive front-end framework
 - [Bulma](https://bulma.io/documentation/)<br/>
 The modern CSS framework that just works.
-- [Milligram](https://milligram.io)<br/>
-A minimalist CSS framework
 - [UIKit](https://getuikit.com/docs/introduction)<br/>
 Lightweight and modular front-end framework
-- *...and some more minimal or "no class" soon.*
+
  
  </details>
 
