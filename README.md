@@ -3,53 +3,69 @@
  <p align="center">
     <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">  
  </p>
- <h2> DevSandbox — 11ty Starter </h2>
-Have an idea, a project, want to learn or just have fun? ...TADAAAM! jobDone!
+ <h2 align="center">📦 DevSandbox — 11tyStarter 🚀</h2>
+<p align="center">Have an idea, a project, want to learn or just have fun? ...TADAAAM!</p>
 
 <br>
 
 
 ### Readme Sections
 
-- [The Sandbox LibStore](#the-sandbox-libstore)
-- - [Styling](#Styling)
-- - [JavaScript](#Javascript) 
-- [11ty extensions collection](#11ty-extensions-collection)
-- - Filters
-- - Short codes
-- - Paired short codes
-- [One click Deploy buttons](#one-click-deploy-buttons)
-- - Vercel
-- - Netlify
+- Quick Start
+- The Sandbox LibStore
+- - *CSS Frameworks*
+- - *JS Libraries*
+- 11ty extensions collection
+- - *Filters / Short codes / Paired short codes*
+- One click Deploy buttons
+- - *Vercel /  Netlify*
 
 
 <br/><br/>
 
+# Quick Start💨
+
+The usual steps...
+
+```
+git clone https://github.com/AndiKod/tadam11ty.git my-proj
+cd my proj
+yarn       // or npm install, or pnpm install
+yarn dev   // See you on port :8080
+```
+### Folder structure seen from the package.json root level:<br/>
+  **/libs**  Contains the Eleventy extensions. Filters, Shortcodes, Paired<br/>
+  **/src/_includes**  Contains the /components, /layouts and sandbox /pkg<br/>
+  **/src/assets**  Contains the /js, /styles and /images containers<br/>
+  **/src/collections**  Contains the /posts, /books, /whatever collections<br/>
+  **/src/pages**  Contains the pages, with a *permalink* tag in their frontmatter<br/><br/>
+  
+  `yarn build` will create the **/_site** folder with your Awesome project inside 
 
 
+<br/>
 
-# The Sandbox libstore
 
-During the prototyping, researches, or playground moments we should  be able to quickly test something new... without yarn/npm installing things yet.  
+# The Sandbox libstore 🎁
 
-Heard that AlpineJS is cool and need some default styling while testing? Make a new page, in the &lt;head> section throw the links, and have fun.
+Heard that AlpineJS is cool and need some default styling while testing? Make a new page, in the &lt;head> section throw the links, and have fun. 
+You can always yarn/npm install things later if needed, or just keep exploring new things. 
 
 ```
 {% include 'pkg/alpine.njk' %}
 {% include 'pkg/bulma.njk' %}
 ```
-At any moment you can add, change, remove libraries to test out concepts without complicating things. 
+Tip: You can setup two Tadams on your machine. The "for production" project, and a sandbox dedicated one to try concepts in it.
 
-Once happy, you sure can delete the *includes* and install into your `package.json` the chosen and proven tech stack for your project.
+
+<br/><br/>
+
+## 🎨 Styling 
+You sometimes just need some basic styling while working on things like getting the data out and see if it prints on the screen, without staring at an ugly page. On the other hand, it's also interesting to test several frameworks when prototyping frontend part.
 
 <br/>
 
----
-[TopNav](#readme-sections)
-<br/><br/>
-
-## Styling 
-You sometimes just need some basic styling while working on things like getting the data out and see if it prints on the screen, without staring at an ugly page. On the other hand, it's also interesting to test several frameworks when prototyping frontend part.
+<details><summary><b>See the 7 Available CSS Flavors:</b></summary>
 
 ### Installed out of the box
 
@@ -71,18 +87,18 @@ A minimalist CSS framework
 - [UIKit](https://getuikit.com/docs/introduction)<br/>
 Lightweight and modular front-end framework
 - *...and some more minimal or "no class" soon.*
+ 
+ </details>
 
-<br/>
 
----
-[TopNav](#readme-sections)
 <br/><br/>
 
-## JavaScript
+## ⚡ JavaScript Libraries
 
 React and Vue can be used for small components, SPA, or just prototyping and playing around, can't do more, but it's still fun to have them. In one way or another, all the libraries can help in some projects or filters/extensions/etc crafting. Charts, maps, animation, date handling, DOM manipulation/interactivity, and more. 
 
 
+<details><summary><b>See the 18 Available—awesome—Packages</b></summary>
 
 - [React](https://reactjs.org/docs/getting-started.html)<br/>
 Modern client-side JavaScript framework
@@ -92,7 +108,7 @@ Modern client-side JavaScript framework
 Your new, lightweight, JavaScript framework
 - [Mithril](https://mithril.js.org)<br/>
 Modern client-side JavaScript framework
-- [Hyperscript](https://hyperscript.org/docs)
+- [_Hyperscript](https://hyperscript.org/docs)<br/>
 Fun and readable, dependency-free DOM manipulation library & more
 - [ChartJS](https://www.chartjs.org/docs/latest/)<br/>
 Simple yet flexible JavaScript charting
@@ -121,14 +137,12 @@ Library that brings database features into your project
 - [Cleave](https://nosir.github.io/cleave.js/)<br/>
 It helps with formatting input text content automatically.
 
+</details>
 
-<br/>
 
----
-[TopNav](#readme-sections)
 <br/><br/>
 
-# Eleventy extensions collection
+# Eleventy extensions collection 🔧
 
 To keep the `.eleventy.js` clean, all the functions are stored in the *lib* folder, like `lib/shortcodes/youtube.js`. In case we need something, a single line in the config file will activate it:
 
@@ -138,12 +152,9 @@ Now we can use in pages/layouts:
 
 ```{% YouTube {video: "xh5VideoId5hx"} %}``` 
 
-That way we can build our collection of 11ty extensions for later projects in one place, instead of messy copy/paste from other previous confing files *(if we remember where we already used what)*.
+<details><summary><b>See more about Extensions</b></summary>
 
-<br/>
 
----
-[TopNav](#readme-sections)
 <br/><br/>
 
 ## [Filters](#filters) 
@@ -167,10 +178,7 @@ Create *filtername.js* with the logic, then in *.eleventy.js*
 > *Usage:* `{% for post in collections.posts | limit(-3) %}` <br/>
 > *Info:* It's the filter used on the official blog-starter project.
 
-<br/>
 
----
-[TopNav](#readme-sections)
 <br/><br/>
 
 ## [Shortcodes](#shortcodes) 
@@ -195,14 +203,13 @@ Create *shortcodename.js* with the logic, then in *.eleventy.js*
 > *Usage:* `{% YouTube { video: 'xXxVidIDxXx' } %}` <br/>
 > *Info:* The video will take 100% width of it's container
 
+ 
+ </details>
 
-<br/>
 
----
-[TopNav](#readme-sections)
 <br/><br/>
 
-# One click Deploy buttons
+# One click Deploy buttons 🚚
 
 When ready to publish, make your repository Public if actually private, place your own *user/repo* in the buttons code, and hit one of them:
 
@@ -225,6 +232,5 @@ When ready to publish, make your repository Public if actually private, place yo
 
 ...if you forget to customise the button, it will obviously build a fresh Tadam instead, so don't ;)
 
----
-[TopNav](#readme-sections)
+
 <br/><br/>
