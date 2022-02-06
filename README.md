@@ -6,7 +6,9 @@
  <h2 align="center">📦 DevSandbox — 11tyStarter 🚀</h2>
 <p align="center">Have an idea, a project, want to learn or just have fun? ...TADAAAM!</p>
 
-<br>
+> *That project was mostly a personal setup, but happy to share, if it can be helpful. It will now be maintained up-to date and completed with more resources as I found them. —Andrei*
+
+<br/>
 
 
 ### Readme Sections
@@ -30,7 +32,7 @@ The usual steps...
 ```
 git clone https://github.com/AndiKod/tadam11ty.git my-proj
 cd my proj
-yarn       // or npm install, or pnpm install
+yarn       // works too with pnpm and npm, sure
 yarn dev   // See you on port :8080
 ```
 ### Folder structure seen from the package.json root level:<br/>
