@@ -15,8 +15,8 @@
 
 - Quick Start
 - The Sandbox LibStore
-- - *CSS Frameworks*
-- - *JS Libraries*
+- - *13 CSS Frameworks*
+- - *18 JS Libraries*
 - 11ty extensions collection
 - - *Filters / Short codes / Paired short codes*
 - One click Deploy buttons
