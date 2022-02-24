@@ -1,7 +1,7 @@
 
 
  <p align="center">
-    <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">  
+    <img src="https://mediastore-sable.vercel.app/tadam/Tadam.png" style="width:20vw" alt="alternate text">  
  </p>
  <h2 align="center">📦 DevSandbox — 11tyStarter 🚀</h2>
 <p align="center">13 CSS flavors, 18 JS libraries, solid defaults and startKit.</p>
