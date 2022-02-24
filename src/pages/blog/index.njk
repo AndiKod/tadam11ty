@@ -1,0 +1,13 @@
+---
+title: "Tadam11ty"
+layout: "layouts/base.njk"
+permalink: /blog/
+---
+
+<em>Almost raw blog parts, as working reference. <br/>Happy copy/pasta coding</em>
+
+<main class="tmpl-post">
+  {% set postslist = collections.posts | limit(-2) %}
+  {% include "components/postslist.njk" %}
+  <h3><a href="{{ '/posts' | url }}">Archive</a></h3>
+</main>

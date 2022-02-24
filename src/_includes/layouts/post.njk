@@ -4,36 +4,47 @@ templateClass: tmpl-post
 ---
 {% set postdate = page.date %}
 
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+  </header>
 
-<h2>{{ title }}</h2>
+  <main>
+    {{ content | safe }}
+  </main>
 
-<time datetime="{{ page.date }}">{{ postdate | readableDate }}</time>
-<br/>
+  <footer>
 
+    <section>
+      {%- for tag in tags | filterTagList -%}
+      {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+      <a href="{{ tagUrl | url }}" class="itemTag">{{ tag }} </a>
+      {%- endfor %}
+      <!--
+      <time datetime="{{ page.date }}">
+        Posted on: {{ postdate | readableDate }}
+      </time>
+       -->
+    </section>
 
-{{ content | safe }}
+    <nav>
+      {%- if collections.posts %}
+        {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+        {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+        {%- if nextPost or previousPost %}
+          <ul class="nextPrev">
 
-<hr>
+            {%- if previousPost %}<li><< <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 
-{%- for tag in tags | filterTagList -%}
-{%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
-<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }} </a>
-{%- endfor %}
-/
-<a href="{{ '/posts' | url }}"> All articles</a>
+            <li><a href="{{ '/blog' | url }}">Archives</a></li>
 
-<hr>
+            {%- if nextPost %}
+            <li><a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a> >></li>
+            {% endif %}
 
-{%- if collections.posts %}
-{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-{%- if nextPost or previousPost %}
-
-<ul>
-  {%- if nextPost %}
-  <li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>
-  {% endif %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
+          </ul>
+        {%- endif %}
+        {%- endif %}
+    </nav>
+  </footer>
+</article>

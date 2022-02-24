@@ -5,6 +5,11 @@ body {
   color: var(--color-text);
 }
 
+.homeHeader > img {
+  width: 20vw;
+  min-width: 100px;
+}
+
 .siteTitle {
   color: var(--color-title);
 }
@@ -14,5 +19,12 @@ a {
 
   &:visited {
     color: var(--color-link);
+  }
+}
+
+.itemTag {
+  background-color: darkolivegreen;
+  &:visited{
+    color:antiquewhite;
   }
 }
