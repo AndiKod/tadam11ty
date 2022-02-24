@@ -1,0 +1,35 @@
+---
+title: "Tadam11ty"
+layout: "layouts/base.njk"
+permalink: /blog/
+---
+
+<em>Almost raw blog parts, as working reference. <br/>Happy copy/pasta coding</em>
+
+<main class="tmpl-home">
+
+  {% set postslist = collections.posts | limit(-2) %}
+  {% include "components/postslist.njk" %}
+
+
+  <!--
+  <section class="mt-6">
+    <h3>Tags</h3>
+    {% for tag in collections.tagList %}
+      {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+    {% endfor %}
+  </section>
+  -->
+
+
+
+  <h3><a href="{{ '/posts' | url }}">Archive</a></h3>
+
+  <!--
+  <hr/>
+  {% set bloglist = collections.myPosts | limit(-2) %}
+  {% include "components/bloglist.njk" %}
+  -->
+
+</main>
