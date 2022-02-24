@@ -11,16 +11,64 @@ permalink: "/vue/"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
   {% include 'pkg/milligram.njk' %}
-  {% include 'pkg/windi.njk' %}
 </head>
 <body>
 <a href="{{ "/sandbox" | url }}"> <- Sandbox</a>
 
   <div class="App"></div>
 
+
+
+
+
+
+  <style media="screen">
+    .App {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .App > h1 {
+      font-size: 6rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .App > img {
+      width: 40vw;
+      max-width: 200px;
+      border-radius: 50%;
+    }
+
+    .App > img.male {
+      border: 4px solid rgb(47, 47, 131);
+    }
+
+    .App>img.female {
+      border: 4px solid rgb(131, 47, 124);
+    }
+
+    .App > button {
+      padding: 10px;
+      background-color:rgb(37, 51, 45);
+      color: ivory;
+      border-radius: 4px;
+      border: none;
+    }
+    .App>button:hover {
+      padding: 10px;
+      background-color: rgb(47, 83, 68);
+      color: ivory;
+      border-radius: 4px;
+      border: none;
+    }
+  </style>
+
   <script src="https://unpkg.com/vue@next"></script>
   <script src="{{ "/assets/js/sandbox/vueApp.js" | url }}"></script>
 </body>
 </html>
-  
-

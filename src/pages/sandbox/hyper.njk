@@ -12,14 +12,13 @@ permalink: "/hyper/"
   <title>{{title}}</title>
   {% include "pkg/hyperscript.njk" %}
   {% include 'pkg/milligram.njk' %}
-  {% include 'pkg/windi.njk' %}
 </head>
 <body class="p-8">
 <a href="{{ "/sandbox" | url }}"> <- Sandbox</a>
 
 <main class="App">
-
   <h1>_Hyperscript</h1>
+
   <button _="
   on click hide the previous <h1/>
   hide the next <code/>
@@ -39,7 +38,6 @@ permalink: "/hyper/"
   wait 1s
   show the next &lt;code/>
   </code></pre>
-  
 </main>
 
 
@@ -50,6 +48,43 @@ permalink: "/hyper/"
     log "Hello Hyperscript" -- nice & short console.log("")
   end
 </script>
-  
+
+
+
+
+
+
+<style media="screen">
+  .App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .App > h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .App > button {
+    padding: 10px;
+    background-color:rgb(37, 51, 45);
+    color: ivory;
+    border-radius: 4px;
+    border: none;
+  }
+  .App>button:hover {
+    padding: 10px;
+    background-color: rgb(47, 83, 68);
+    color: ivory;
+    border-radius: 4px;
+    border: none;
+  }
+</style>
+
 </body>
 </html>

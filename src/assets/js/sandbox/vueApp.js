@@ -36,7 +36,7 @@ const app = Vue.createApp({
       this.picture = results[0].picture.large
     },
   },
-  
+
 })
 
 

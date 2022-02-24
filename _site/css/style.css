@@ -1,29 +1,74 @@
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 98vh;
+/*
+*  Docs: https://windicss.org/features/
+*  Usage: In _includes/layouts/base.njk'<head>
+*         add {% include 'pkg/scss.njk' %}
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&display=swap");
+:root {
+  --color-bg: #1e1c1b;
+  --color-text: #f4ece8;
+  --color-link: #55aa80;
+  --color-title: #12cc6f;
 }
 
-footer {
-  text-align: right;
-  font-weight: 600;
+body {
+  font-family: Lato, sans-serif;
+  font-size: 0.9rem;
 }
 
-a:hover {
-  text-decoration: underline;
+h1, h2, h3 {
+  font-family: "Poiret One", cursive;
+  font-style: normal;
 }
 
-#canvas-basic {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+.siteTitle {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Colors & Images */
+.homeHeader {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tmpl-home {
+  padding-top: 10vh;
+}
+
+.tmpl-home > p {
+  text-align: center;
+}
+
+/* Colors & Images */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.siteTitle {
+  color: var(--color-title);
+}
+
+a {
+  color: var(--color-link);
+}
+a:visited {
+  color: var(--color-link);
+}
+
+.tmpl-home, .tmpl-post {
+  width: 90vw;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

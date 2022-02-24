@@ -4,11 +4,10 @@
     <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">  
  </p>
  <h2 align="center">📦 DevSandbox — 11tyStarter 🚀</h2>
-<p align="center">Have an idea, a project, want to learn or just have fun? ...TADAAAM!</p>
+<p align="center">13 CSS flavors, 18 JS libraries, solid defaults and startKit.</p>
 
 
-<br/>
-
+<br/><br/>
 
 ### Readme Sections
 
@@ -40,8 +39,8 @@ yarn dev   // See you on port :8080
   **/src/assets**  Contains the /js, /styles and /images containers<br/>
   **/src/collections**  Contains the /posts, /books, /whatever collections<br/>
   **/src/pages**  Contains the pages, with a *permalink* tag in their frontmatter<br/><br/>
-  
-  `yarn build` will create the **/_site** folder with your Awesome project inside 
+
+  `yarn build` will create the **/_site** folder with your Awesome project inside
 
 
 <br/>
@@ -49,8 +48,8 @@ yarn dev   // See you on port :8080
 
 # The Sandbox libstore 🎁
 
-Heard that AlpineJS is cool and need some default styling while testing? Make a new page, in the &lt;head> section throw the links, and have fun. 
-You can always yarn/npm install things later if needed, or just keep exploring new things. 
+Heard that AlpineJS is cool and need some default styling while testing? Make a new page, in the &lt;head> section throw the links, and have fun.
+You can always yarn/npm install things later if needed, or just keep exploring new things.
 
 ```
 {% include 'pkg/alpine.njk' %}
@@ -61,7 +60,7 @@ Tip: You can setup two Tadams on your machine. The "for production" project, and
 
 <br/><br/>
 
-## 🎨 Styling 
+## 🎨 Styling
 You sometimes just need some basic styling while working on things like getting the data out and see if it prints on the screen, without staring at an ugly page. On the other hand, it's also interesting to test several frameworks when prototyping frontend part.
 
 <br/>
@@ -85,7 +84,7 @@ Utility first and similar approaches
 - [Tachyons](http://tachyons.io/docs/)
 Built for designing. *...with as little css as possible.*
 - [Tailwind](https://tailwindcss.com/docs/installation/play-cdn)
-The "Play CDN" setup for testing and prototyping 
+The "Play CDN" setup for testing and prototyping
 - [OpenProps](https://open-props.style/#getting-started)
 Supercharged CSS variables
 
@@ -103,7 +102,7 @@ A micro (~3kb) CSS framework.
 
 The classics
 - [Bootstrap](https://getbootstrap.com)<br/>
-World’s most popular front-end toolkit 
+World’s most popular front-end toolkit
 - [Foundation for Sites](https://get.foundation/sites/docs/)<br/>
 Advanced responsive front-end framework
 - [Bulma](https://bulma.io/documentation/)<br/>
@@ -111,7 +110,7 @@ The modern CSS framework that just works.
 - [UIKit](https://getuikit.com/docs/introduction)<br/>
 Lightweight and modular front-end framework
 
- 
+
  </details>
 
 
@@ -119,7 +118,7 @@ Lightweight and modular front-end framework
 
 ## ⚡ JavaScript Libraries
 
-React and Vue can be used for small components, SPA, or just prototyping and playing around, can't do more, but it's still fun to have them. In one way or another, all the libraries can help in some projects or filters/extensions/etc crafting. Charts, maps, animation, date handling, DOM manipulation/interactivity, and more. 
+React and Vue can be used for small components, SPA, or just prototyping and playing around, can't do more, but it's still fun to have them. In one way or another, all the libraries can help in some projects or filters/extensions/etc crafting. Charts, maps, animation, date handling, DOM manipulation/interactivity, and more.
 
 
 <details><summary><b>See the 18 Available—awesome—Packages</b></summary>
@@ -170,18 +169,18 @@ It helps with formatting input text content automatically.
 
 To keep the `.eleventy.js` clean, all the functions are stored in the *lib* folder, like `lib/shortcodes/youtube.js`. In case we need something, a single line in the config file will activate it:
 
-```eleventyConfig.addShortcode('YouTube', require('./lib/shortcodes/youtube'));``` 
+```eleventyConfig.addShortcode('YouTube', require('./lib/shortcodes/youtube'));```
 
-Now we can use in pages/layouts: 
+Now we can use in pages/layouts:
 
-```{% YouTube {video: "xh5VideoId5hx"} %}``` 
+```{% YouTube {video: "xh5VideoId5hx"} %}```
 
 <details><summary><b>See more about Extensions</b></summary>
 
 
 <br/><br/>
 
-## [Filters](#filters) 
+## [Filters](#filters)
 *[11ty.dev/docs/filters/](11ty.dev/docs/filters/)*
 
 <br/>
@@ -190,14 +189,14 @@ Now we can use in pages/layouts:
 Create *filtername.js* with the logic, then in *.eleventy.js*
 ```eleventyConfig.addFilter('FilterName', require('./lib/filters/filtername'));```
 
-### Usage<br/> 
-```{{ someString | FilterName }} ``` or<br/> 
-```{% for post in collections.posts | FilterName %}``` 
+### Usage<br/>
+```{{ someString | FilterName }} ``` or<br/>
+```{% for post in collections.posts | FilterName %}```
 
 ## Filters included
 
- ### limit 
-> *File:* arr-res-limit.js <br/> 
+ ### limit
+> *File:* arr-res-limit.js <br/>
 > *Effect:* Takes an arrays and returns the n-th most recent items <br/>
 > *Usage:* `{% for post in collections.posts | limit(-3) %}` <br/>
 > *Info:* It's the filter used on the official blog-starter project.
@@ -205,15 +204,15 @@ Create *filtername.js* with the logic, then in *.eleventy.js*
 
 <br/><br/>
 
-## [Shortcodes](#shortcodes) 
+## [Shortcodes](#shortcodes)
 *[11ty.dev/docs/shortcodes/](11ty.dev/docs/shortcodes/)*
 
 ### Creation
 Create *shortcodename.js* with the logic, then in *.eleventy.js*
 ```eleventyConfig.addShortcode('ShortcodeName', require('./lib/filters/filtername'));```
 
-### Usage 
-```{% codeName { propName: 'propValue' } %} ``` 
+### Usage
+```{% codeName { propName: 'propValue' } %} ```
 
 <br/>
 
@@ -221,13 +220,13 @@ Create *shortcodename.js* with the logic, then in *.eleventy.js*
 
 <br/>
 
- ### YouTube 
-> *File:* youtube.js <br/> 
+ ### YouTube
+> *File:* youtube.js <br/>
 > *Effect:* Insert a video on the page <br/>
 > *Usage:* `{% YouTube { video: 'xXxVidIDxXx' } %}` <br/>
 > *Info:* The video will take 100% width of it's container
 
- 
+
  </details>
 
 

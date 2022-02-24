@@ -1,4 +1,13 @@
+/*
+*  Docs: https://windicss.org/features/
+*  Usage: In _includes/layouts/base.njk'<head>
+*         add {% include 'pkg/windi.njk' %}
+*/
+
+
 /* windicss layer base */
+
+
 *, ::before, ::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6,6 +15,8 @@
   border-style: solid;
   border-color: #e5e7eb;
 }
+
+
 * {
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
@@ -15,48 +26,137 @@
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
 }
+
+
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+
+* {
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+}
+
+
 :root {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
 }
+
+
 :-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+
+
 :-moz-ui-invalid {
   box-shadow: none;
 }
+
+
+:root {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+}
+
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+
 ::moz-focus-inner {
   border-style: none;
   padding: 0;
 }
+
+
 ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
   height: auto;
 }
+
+
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
 }
+
+
+::moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+
 [type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
+
+
 abbr[title] {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
+
+
 a {
   color: inherit;
   text-decoration: inherit;
 }
+
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+
 body {
   margin: 0;
   font-family: inherit;
   line-height: inherit;
 }
+
+
 button {
   font-family: inherit;
   font-size: 100%;
@@ -69,121 +169,113 @@ button {
   line-height: inherit;
   color: inherit;
 }
+
+
 button, [type='button'], [type='reset'], [type='submit'] {
   -webkit-appearance: button;
 }
+
+
 button, [role="button"] {
   cursor: pointer;
 }
+
+
+body {
+  margin: 0;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+
 code, pre {
   font-size: 1em;
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
-canvas, img {
-  display: block;
-  vertical-align: middle;
-}
+
+
 html {
   -webkit-text-size-adjust: 100%;
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   line-height: 1.5;
 }
-h1, h2, p, pre {
+
+
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+
+
+h2, p, h1, hr, h3, pre {
   margin: 0;
 }
-h1, h2 {
+
+
+h2, h1, h3 {
   font-size: inherit;
   font-weight: inherit;
 }
+
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  line-height: 1.5;
+}
+
+
 img {
   border-style: solid;
+  display: block;
+  vertical-align: middle;
   max-width: 100%;
   height: auto;
 }
+
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+
 /* windicss layer components */
 
+
 /* windicss layer utilities */
+
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
 }
-.justify-self-start {
-  -ms-grid-column-align: start;
-  justify-self: start;
-}
-.font-bold {
-  font-weight: 700;
-}
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-.mt-35 {
-  margin-top: 8.75rem;
-}
-.mt-4 {
-  margin-top: 1rem;
-}
-.mb-8 {
-  margin-bottom: 2rem;
-}
+
+
 .mt-6 {
   margin-top: 1.5rem;
 }
+
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+
 .p-8 {
   padding: 2rem;
 }
-.pt-12 {
-  padding-top: 3rem;
-}
-.text-center {
-  text-align: center;
-}
-.text-green-400 {
-  --tw-text-opacity: 1;
-  color: rgba(52, 211, 153, var(--tw-text-opacity));
-}
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgba(96, 165, 250, var(--tw-text-opacity));
-}
+
+
 .text-sky-50 {
   --tw-text-opacity: 1;
   color: rgba(240, 249, 255, var(--tw-text-opacity));
 }
-.text-shadow {
-  text-shadow: 0px 0px 1px rgb(0 0 0 / 20%), 0px 0px 1px rgb(1 0 5 / 10%);
-}
-.text-shadow-md {
-  text-shadow: 0px 1px 2px rgb(30 29 39 / 19%), 1px 2px 4px rgb(54 64 147 / 18%);
-}
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
-.w-8 {
-  width: 2rem;
-}
-.w-11\/12 {
-  width: 91.666667%;
-}
+
 
 .siteTitle {
-  font-weight: 700;
   font-size: 3.75rem;
   line-height: 1;
   margin-bottom: 1.5rem;
@@ -201,6 +293,10 @@ h2 {
   color: rgba(199, 210, 254, var(--tw-text-opacity));
 }
 
+.tmpl-home, .tmpl-post {
+  width: 90vw;
+  margin: 0 auto;
+}
 
 
 

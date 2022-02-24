@@ -1,2 +1,18 @@
 /* Colors & Images */
 
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.siteTitle {
+  color: var(--color-title);
+}
+
+a {
+  color: var(--color-link);
+
+  &:visited {
+    color: var(--color-link);
+  }
+}

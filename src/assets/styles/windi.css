@@ -1,9 +1,15 @@
+/*
+*  Docs: https://windicss.org/features/
+*  Usage: In _includes/layouts/base.njk'<head>
+*         add {% include 'pkg/windi.njk' %}
+*/
 
 
 @windicss;
 
+
 .siteTitle {
-  @apply text-6xl text-emerald-600 font-bold mb-6;
+  @apply text-6xl text-emerald-600 mb-6;
 }
 
 
@@ -12,6 +18,10 @@ h2 {
   @apply font-bold text-2xl text-indigo-200;
 }
 
+.tmpl-home, .tmpl-post {
+  width: 90vw;
+  margin: 0 auto;
+}
 
 
 

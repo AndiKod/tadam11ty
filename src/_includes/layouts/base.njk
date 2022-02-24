@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link rel="icon" type="image/x-icon" href="{{ "/assets/img/tadam.ico" | url }}">
- 
-  {% include 'pkg/granim.njk' %}
-  {% include 'pkg/windi.njk' %}
-  
+
+  {% include 'pkg/scss.njk' %}
+
   <script src="{{ '/assets/js/main.js' | url }}" defer></script>
 </head>
 <body class="bg-gray-700 text-sky-50">
-  <div class="page">
+
     {% include 'components/header.njk' %}
-    <main class="justify-self-start">
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
-  </div>
+    <footer></footer>
+
 </body>
 </html>
