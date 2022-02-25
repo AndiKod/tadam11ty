@@ -29,7 +29,7 @@ The usual steps...
 
 ```
 git clone https://github.com/AndiKod/tadam11ty.git my-proj
-cd my proj
+cd my-proj
 yarn       // works too with pnpm and npm, sure
 yarn dev   // See you on port :8080
 ```
