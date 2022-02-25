@@ -1,12 +1,17 @@
 ---
-title: "Tadam11ty"
-layout: "layouts/base.njk"
+title: Blog 
+layout: base
 permalink: /blog/
 ---
 
 <em>Almost raw blog parts, as working reference. <br/>Happy copy/pasta coding</em>
 
 <main class="tmpl-post">
+  <h3>Last 2 posts</h3>
   {% set postslist = collections.posts | limit(-2) %}
+  {% include "components/postslist.njk" %}
+
+  <h3>All posts (aka Archives)</h3>
+  {% set postslist = collections.posts %}
   {% include "components/postslist.njk" %}
 </main>

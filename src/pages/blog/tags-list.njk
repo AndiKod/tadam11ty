@@ -1,8 +1,10 @@
 ---
+title: Tags
+layout: post
 permalink: /tags/
-layout: layouts/post.njk
 ---
-<h1>Tags</h1>
+<h1>{{page.data.title}}</h1>
+<p>All tags except those filtered in the config</p>
 
 {% for tag in collections.tagList %}
   {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}

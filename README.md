@@ -7,7 +7,7 @@
 <p align="center">13 CSS flavors, 18 JS libraries, solid defaults and startKit.</p>
 
 
-<br/><br/>
+<br><br>
 
 ### Readme Sections
 
@@ -21,7 +21,7 @@
 - - *Vercel /  Netlify*
 
 
-<br/><br/>
+<br><br>
 
 # Quick Start💨
 
@@ -33,17 +33,17 @@ cd my proj
 yarn       // works too with pnpm and npm, sure
 yarn dev   // See you on port :8080
 ```
-### Folder structure seen from the package.json root level:<br/>
-  **/libs**  Contains the Eleventy extensions. Filters, Shortcodes, Paired<br/>
-  **/src/_includes**  Contains the /components, /layouts and sandbox /pkg<br/>
-  **/src/assets**  Contains the /js, /styles and /images containers<br/>
-  **/src/collections**  Contains the /posts, /books, /whatever collections<br/>
-  **/src/pages**  Contains the pages, with a *permalink* tag in their frontmatter<br/><br/>
+### Folder structure seen from the package.json root level:<br>
+  **/libs**  Contains the Eleventy extensions. Filters, Shortcodes, Paired<br>
+  **/src/_includes**  Contains the /components, /layouts and sandbox /pkg<br>
+  **/src/assets**  Contains the /js, /styles and /images containers<br>
+  **/src/collections**  Contains the /posts, /books, /whatever collections<br>
+  **/src/pages**  Contains the pages, with a *permalink* tag in their frontmatter<br><br>
 
   `yarn build` will create the **/_site** folder with your Awesome project inside
 
 
-<br/>
+<br>
 
 
 # The Sandbox libstore 🎁
@@ -58,12 +58,12 @@ You can always yarn/npm install things later if needed, or just keep exploring n
 Tip: You can setup two Tadams on your machine. The "for production" project, and a sandbox dedicated one to try concepts in it.
 
 
-<br/><br/>
+<br><br>
 
 ## 🎨 Styling
 You sometimes just need some basic styling while working on things like getting the data out and see if it prints on the screen, without staring at an ugly page. On the other hand, it's also interesting to test several frameworks when prototyping frontend part.
 
-<br/>
+<br>
 
 <details><summary><b>See the 13 Available CSS Flavors:</b></summary>
 
@@ -71,10 +71,10 @@ You sometimes just need some basic styling while working on things like getting 
 
 ### Installed out of the box
 
-- [SASS]() already included<br/>
+- [SASS]() already included<br>
 CSS with super powers.
-- [WindiCSS]() already included<br/>
-Next generation utility-first CSS framework.<br/>
+- [WindiCSS]() already included<br>
+Next generation utility-first CSS framework.<br>
 Tailwind compatible syntax, plus other features.
 
 ### Alternative CSS frameworks
@@ -95,26 +95,26 @@ A drop-in collection of CSS styles
 A minimalist stylesheet for HTML elements
 
 Minimalist frameworks
-- [Milligram](https://milligram.io)<br/>
+- [Milligram](https://milligram.io)<br>
 A minimalist CSS framework
 - [Chota](https://jenil.github.io/chota/)
 A micro (~3kb) CSS framework.
 
 The classics
-- [Bootstrap](https://getbootstrap.com)<br/>
+- [Bootstrap](https://getbootstrap.com)<br>
 World’s most popular front-end toolkit
-- [Foundation for Sites](https://get.foundation/sites/docs/)<br/>
+- [Foundation for Sites](https://get.foundation/sites/docs/)<br>
 Advanced responsive front-end framework
-- [Bulma](https://bulma.io/documentation/)<br/>
+- [Bulma](https://bulma.io/documentation/)<br>
 The modern CSS framework that just works.
-- [UIKit](https://getuikit.com/docs/introduction)<br/>
+- [UIKit](https://getuikit.com/docs/introduction)<br>
 Lightweight and modular front-end framework
 
 
  </details>
 
 
-<br/><br/>
+<br><br>
 
 ## ⚡ JavaScript Libraries
 
@@ -123,47 +123,47 @@ React and Vue can be used for small components, SPA, or just prototyping and pla
 
 <details><summary><b>See the 18 Available—awesome—Packages</b></summary>
 
-- [React](https://reactjs.org/docs/getting-started.html)<br/>
+- [React](https://reactjs.org/docs/getting-started.html)<br>
 Modern client-side JavaScript framework
-- [Vue 3](https://v3.vuejs.org/guide/introduction.html)<br/>
+- [Vue 3](https://v3.vuejs.org/guide/introduction.html)<br>
 Modern client-side JavaScript framework
-- [AlpineJS](https://alpinejs.dev/start-here)<br/>
+- [AlpineJS](https://alpinejs.dev/start-here)<br>
 Your new, lightweight, JavaScript framework
-- [Mithril](https://mithril.js.org)<br/>
+- [Mithril](https://mithril.js.org)<br>
 Modern client-side JavaScript framework
-- [_Hyperscript](https://hyperscript.org/docs)<br/>
+- [_Hyperscript](https://hyperscript.org/docs)<br>
 Fun and readable, dependency-free DOM manipulation library & more
-- [ChartJS](https://www.chartjs.org/docs/latest/)<br/>
+- [ChartJS](https://www.chartjs.org/docs/latest/)<br>
 Simple yet flexible JavaScript charting
-- [ApexCharts](https://apexcharts.com/docs/creating-first-javascript-chart/)<br/>
+- [ApexCharts](https://apexcharts.com/docs/creating-first-javascript-chart/)<br>
 Modern & Interactive Open-source Charts
-- [AnimateOnScroll](https://michalsnik.github.io/aos/)<br/>
+- [AnimateOnScroll](https://michalsnik.github.io/aos/)<br>
 Animate On Scroll Library
-- [Granim](https://sarcadass.github.io/granim.js/examples.html)<br/>
+- [Granim](https://sarcadass.github.io/granim.js/examples.html)<br>
 Fluid and interactive gradient animations library
-- [Leaflet](https://leafletjs.com/reference.html)<br/>
+- [Leaflet](https://leafletjs.com/reference.html)<br>
 JavaScript library for mobile-friendly interactive maps
-- [Moment](https://momentjs.com)<br/>
+- [Moment](https://momentjs.com)<br>
 Parse, validate, manipulate,and display dates and times
-- [Luxon](https://moment.github.io/luxon/#/)<br/>
+- [Luxon](https://moment.github.io/luxon/#/)<br>
 Modern, and friendly wrapper for JavaScript dates and times
-- [UmbrellaJS](https://umbrellajs.com/documentation)<br/>
+- [UmbrellaJS](https://umbrellajs.com/documentation)<br>
 Tiny library for DOM manipulation and events
-- [jQuery Core](https://learn.jquery.com/using-jquery-core/)<br/>
+- [jQuery Core](https://learn.jquery.com/using-jquery-core/)<br>
 jQuery is a fast, small, and feature-rich JavaScript library.
-- [Voca](https://vocajs.com/#)<br/>
+- [Voca](https://vocajs.com/#)<br>
 The ultimate JavaScript string library
-- [Lodash](https://lodash.com/docs/4.17.15)<br/>
+- [Lodash](https://lodash.com/docs/4.17.15)<br>
 JS utility library delivering modularity, performance & extras
-- [TaffyDB](https://taffydb.com)<br/>
+- [TaffyDB](https://taffydb.com)<br>
 Library that brings database features into your project
-- [Cleave](https://nosir.github.io/cleave.js/)<br/>
+- [Cleave](https://nosir.github.io/cleave.js/)<br>
 It helps with formatting input text content automatically.
 
 </details>
 
 
-<br/><br/>
+<br><br>
 
 # Eleventy extensions collection 🔧
 
@@ -178,31 +178,31 @@ Now we can use in pages/layouts:
 <details><summary><b>See more about Extensions</b></summary>
 
 
-<br/><br/>
+<br><br>
 
 ## [Filters](#filters)
 *[11ty.dev/docs/filters/](11ty.dev/docs/filters/)*
 
-<br/>
+<br>
 
-### Creation<br/>
+### Creation<br>
 Create *filtername.js* with the logic, then in *.eleventy.js*
 ```eleventyConfig.addFilter('FilterName', require('./lib/filters/filtername'));```
 
-### Usage<br/>
-```{{ someString | FilterName }} ``` or<br/>
+### Usage<br>
+```{{ someString | FilterName }} ``` or<br>
 ```{% for post in collections.posts | FilterName %}```
 
 ## Filters included
 
  ### limit
-> *File:* arr-res-limit.js <br/>
-> *Effect:* Takes an arrays and returns the n-th most recent items <br/>
-> *Usage:* `{% for post in collections.posts | limit(-3) %}` <br/>
+> *File:* arr-res-limit.js <br>
+> *Effect:* Takes an arrays and returns the n-th most recent items <br>
+> *Usage:* `{% for post in collections.posts | limit(-3) %}` <br>
 > *Info:* It's the filter used on the official blog-starter project.
 
 
-<br/><br/>
+<br><br>
 
 ## [Shortcodes](#shortcodes)
 *[11ty.dev/docs/shortcodes/](11ty.dev/docs/shortcodes/)*
@@ -214,23 +214,23 @@ Create *shortcodename.js* with the logic, then in *.eleventy.js*
 ### Usage
 ```{% codeName { propName: 'propValue' } %} ```
 
-<br/>
+<br>
 
 ## Shortcodes included
 
-<br/>
+<br>
 
  ### YouTube
-> *File:* youtube.js <br/>
-> *Effect:* Insert a video on the page <br/>
-> *Usage:* `{% YouTube { video: 'xXxVidIDxXx' } %}` <br/>
+> *File:* youtube.js <br>
+> *Effect:* Insert a video on the page <br>
+> *Usage:* `{% YouTube { video: 'xXxVidIDxXx' } %}` <br>
 > *Info:* The video will take 100% width of it's container
 
 
  </details>
 
 
-<br/><br/>
+<br><br>
 
 # One click Deploy buttons 🚚
 
@@ -242,18 +242,18 @@ When ready to publish, make your repository Public if actually private, place yo
 
 ```[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/user/repo)```
 
-<br/>
+<br>
 
 ## Netlify
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AndiKod/tadam11ty)
-<br/>
+<br>
 
 ```[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/user/repo)```
 
-<br/>
+<br>
 
 ...if you forget to customise the button, it will obviously build a fresh Tadam instead, so don't ;)
 
 
-<br/><br/>
+<br><br>
