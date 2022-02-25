@@ -1,51 +1,34 @@
-/* Colors & Images */
+/* _layout.scss */
 
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
-.v {
-  border: 1px solid yellow;
-}
-.homeHeader{
+// Home page
+.home-header{
   width: 90vw;
   margin: 0 auto;
   padding-top: 15vh;
   text-align: center;
 }
-
 .tmpl-home {
   padding-top: 10vh;
-}
-
-.tmpl-home > p {
   text-align: center;
 }
 
-time {
-  margin-bottom: .8rem;
-}
 
-.itemTag {
-  padding: 4px 8px;
-  margin-right: .5rem;
-  border-radius: 4px;
-}
-
-.nextPrev {
-  display: flex;
-  justify-content: space-around;
-}
 
 article {
   display: flex;
   flex-direction: column;
   height: auto;
 }
-
 article > main {
   padding-bottom: 2rem;
+}
+.itemTag {
+  padding: 4px 8px;
+  margin-right: .5rem;
+  border-radius: 4px;
+}
+.nextPrev {
+  display: flex;
+  justify-content: space-around;
 }

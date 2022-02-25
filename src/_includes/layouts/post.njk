@@ -6,38 +6,42 @@ templateClass: tmpl-post
 
 <article>
   <header>
+    <!-- Hmmm, yep, the Title -->
     <h1>{{ title }}</h1>
   </header>
-
   <main>
+    <!-- The body, main content of the Article -->
     {{ content | safe }}
   </main>
-
   <footer>
-
     <section>
+      <!-- Taggs attached to the Article (in the frontmatter) -->
       {%- for tag in tags | filterTagList -%}
       {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
       <a href="{{ tagUrl | url }}" class="itemTag">{{ tag }} </a>
       {%- endfor %}
-      <!--
+      <!-- The published date with the | readableDate filter
       <time datetime="{{ page.date }}">
         Posted on: {{ postdate | readableDate }}
       </time>
        -->
     </section>
-
     <nav>
+      <!-- Previous/Next piece of content Navigation -->
       {%- if collections.posts %}
+
         {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
         {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+
         {%- if nextPost or previousPost %}
           <ul class="nextPrev">
 
+            <!-- Previous -->
             {%- if previousPost %}<li><< <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 
             <li><a href="{{ '/blog' | url }}">Archives</a></li>
 
+            <!-- Next -->
             {%- if nextPost %}
             <li><a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a> >></li>
             {% endif %}

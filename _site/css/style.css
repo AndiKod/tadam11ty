@@ -38,19 +38,8 @@ ul {
   font-size: 0.8rem;
 }
 
-/* Colors & Images */
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.v {
-  border: 1px solid yellow;
-}
-
-.homeHeader {
+/* _layout.scss */
+.home-header {
   width: 90vw;
   margin: 0 auto;
   padding-top: 15vh;
@@ -59,14 +48,17 @@ body {
 
 .tmpl-home {
   padding-top: 10vh;
-}
-
-.tmpl-home > p {
   text-align: center;
 }
 
-time {
-  margin-bottom: 0.8rem;
+article {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+article > main {
+  padding-bottom: 2rem;
 }
 
 .itemTag {
@@ -80,23 +72,13 @@ time {
   justify-content: space-around;
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
-article > main {
-  padding-bottom: 2rem;
-}
-
 /* Colors & Images */
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
 }
 
-.homeHeader > img {
+.logo img {
   width: 20vw;
   min-width: 100px;
 }

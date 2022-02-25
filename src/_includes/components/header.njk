@@ -1,11 +1,12 @@
 
-<header class="homeHeader">
-  <!--
-  <h1 class="siteTitle">
-    <a href="{{"/" | url}}">{{ metadata.title }}</a>
-  </h1> -->
-  <img src="https://mediastore-sable.vercel.app/tadam/Tadam.png" alt="Tadam">
-  <h2>{{ metadata.tagline }}</h2>
+<header class="home-header">
+  <a href="{{"/" | url}}" class="logo">
+    <img src="https://mediastore-sable.vercel.app/tadam/Tadam.png" alt="Tadam" >
+  </a>
+  <hgroup>
+    <h1 hidden>{{ metadata.title }}</h1>
+    <h2>{{ metadata.tagline }}</h2>
+  </hgroup>
   <a href="https://github.com/AndiKod/tadam11ty">
     <img src="{{ " /assets/img/github.svg" | url }}" alt="GitHub"/>
   </a>

@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First post</title
-  <meta name="description" content="Tadam. DevSandbox & 11tyStarter"
-  <link rel="icon" type="image/x-icon" href="/assets/img/tadam.ico">
+  <title>First post</title>
+  <meta name="description" content="Tadam. DevSandbox & 11tyStarter">
+  <link rel="icon" type="image/x-icon" href="/assets/img/tadam.svg">
 
   <!--
-*     WindiCSS is already installed.
+*     Edit SCSS in: src/assets/styles.
 *     This page will include the link to the compiled styles.
 *-->
 
@@ -18,48 +18,52 @@
 
   <script src="/assets/js/main.js" defer></script>
 </head>
-<body class="bg-gray-700 text-sky-50">
-
-    
-<header class="homeHeader">
-  <!--
-  <h1 class="siteTitle">
-    <a href="/">Tadam</a>
-  </h1> -->
-  <img src="https://mediastore-sable.vercel.app/tadam/Tadam.png" alt="Tadam">
-  <h2>DevSandbox—11tyStarter</h2>
+<body>
+  
+<header class="home-header">
+  <a href="/" class="logo">
+    <img src="https://mediastore-sable.vercel.app/tadam/Tadam.png" alt="Tadam" >
+  </a>
+  <hgroup>
+    <h1 hidden>Tadam</h1>
+    <h2>DevSandbox—11tyStarter</h2>
+  </hgroup>
   <a href="https://github.com/AndiKod/tadam11ty">
     <img src=" /assets/img/github.svg" alt="GitHub"/>
   </a>
 </header>
 
-    <main class="tmpl-post">
-      
+  <main class="tmpl-post">
+    
 
 <article>
   <header>
+    <!-- Hmmm, yep, the Title -->
     <h1>First post</h1>
   </header>
-
   <main>
+    <!-- The body, main content of the Article -->
     <p>First local post</p>
 
   </main>
-
   <footer>
-
-    <section><a href="/tags/tag1/" class="itemTag">tag1 </a><a href="/tags/tag2/" class="itemTag">tag2 </a><a href="/tags/tag3/" class="itemTag">tag3 </a>
-      <!--
+    <section>
+      <!-- Taggs attached to the Article (in the frontmatter) --><a href="/tags/tag1/" class="itemTag">tag1 </a><a href="/tags/tag2/" class="itemTag">tag2 </a><a href="/tags/tag3/" class="itemTag">tag3 </a>
+      <!-- The published date with the | readableDate filter
       <time datetime="Wed Feb 23 2022 04:29:18 GMT+0100 (heure normale d’Europe centrale)">
         Posted on: February 23 — 2022
       </time>
        -->
     </section>
-
     <nav>
+      <!-- Previous/Next piece of content Navigation -->
           <ul class="nextPrev">
 
+            <!-- Previous -->
+
             <li><a href="/blog">Archives</a></li>
+
+            <!-- Next -->
             <li><a href="/collections/posts/second-post/">Second post</a> >></li>
             
 
@@ -68,8 +72,6 @@
   </footer>
 </article>
 
-    </main>
-
-
+  </main>
 </body>
 </html>
