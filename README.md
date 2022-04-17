@@ -257,3 +257,5 @@ When ready to publish, make your repository Public if actually private, place yo
 
 
 <br><br>
+
+Contact: andrei@andikod.fr
