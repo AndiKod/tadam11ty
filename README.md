@@ -71,6 +71,8 @@ You sometimes just need some basic styling while working on things like getting 
 
 ### Installed out of the box
 
+The whole thing is mainly based on the [Eleventy](https://www.11ty.dev) v3.0+ static site generator, with some [Nunjucks](https://mozilla.github.io/nunjucks/) templating, and [Sass](https://sass-lang.com/) for styling.
+
 - [SASS]() already included<br>
 CSS with super powers.
 - [WindiCSS]() already included<br>
