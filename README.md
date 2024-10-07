@@ -5,7 +5,7 @@
  </p>
  <h2 align="center">📦 DevSandbox — 11ty3.Starter/KitchenSink 🚀</h2>
 <p align="center">Multiple CSS flavors, JS libraries, code snippets and startKit.<br>
-You can copy-paste some parts into a new project, test/prototype, or remove what you don't need and go with the flow.</p>
+You can copy-paste some parts into a new project, test/prototype, or remove what you don't need and go on.</p>
 
 _An obvious evolving project, but feel free to give it a try. Feedback is welcome, as I'm considering what to add next._
 
