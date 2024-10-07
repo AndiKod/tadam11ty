@@ -7,7 +7,7 @@
 <p align="center">Multiple CSS flavors, JS libraries, code snippets and startKit.<br>
 You can copy-paste some parts into a new project, test/prototype, or remove what you don't need and go on.</p>
 
-_An obvious evolving project, but feel free to give it a try. Feedback is welcome, as I'm considering what to add next._
+_An obvious evolving project, as I'm considering what to add/remove next._
 
 <br><br>
 
@@ -15,12 +15,15 @@ _An obvious evolving project, but feel free to give it a try. Feedback is welcom
 
 - Quick Start
 - The Sandbox LibStore
-- - *13 CSS Frameworks*
-- - *18 JS Libraries*
+- - *CSS Frameworks*
+- - *JS Libraries*
 - 11ty extensions collection
 - - *Filters / Short codes / Paired short codes*
 - One click Deploy buttons
 - - *Vercel /  Netlify*
+
+
+Not yet documented, but you can find inside the example implementation of official plugins, data consumption from an API, environment variables, and more.
 
 
 <br><br>
