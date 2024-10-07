@@ -3,11 +3,11 @@
  <p align="center">
     <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">  
  </p>
- <h2 align="center">📦 DevSandbox — 11ty3.Starter 🚀</h2>
-<p align="center">13 CSS flavors, 18 JS libraries, solid defaults and startKit.</p>
+ <h2 align="center">📦 DevSandbox — 11ty3.Starter/KitchenSink 🚀</h2>
+<p align="center">Multiple CSS flavors, JS libraries, code snippets and startKit.<br>
+You can copy-paste some parts into a new project, test/prototype, or remove what you don't need and go with the flow.</p>
 
-<p>The whole thing is mainly based on the [Eleventy](https://www.11ty.dev) v3.0+ static site generator, with some [Nunjucks](https://mozilla.github.io/nunjucks/) templating, and [Sass](https://sass-lang.com/) for styling. A few more CSS and JS libraries are included, but you can easily remove them if you don't need them.</p>
-
+_An obvious evolving project, but feel free to give it a try. Feedback is welcome, as I'm considering what to add next._
 
 <br><br>
 
@@ -27,7 +27,7 @@
 
 # Quick Start💨
 
-The usual steps...
+The usual prefered steps...
 
 ```
 git clone https://github.com/AndiKod/tadam11ty.git my-proj
