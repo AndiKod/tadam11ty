@@ -1,0 +1,24 @@
+---
+title: "{{ possum.name }}"
+layout: "layouts/home.njk"
+pagination:
+  data: possums
+  size: 1
+  alias: possum
+permalink: "possum/{{ possum.name | slugify }}/"
+---
+
+<h2>{{ possum.name }}</h2>
+
+<p>This possum is {{ possum.age }} years old.</p>
+
+<nav aria-labelledby="my-pagination"></nav>
+  <ol class="flex justify-center items-center gap-2 mt-4">
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">< Previous Possum</a>{% else %}Previous{% endif %}</li>
+    <li>  -  </li>
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next Possum ></a>{% else %}Next{% endif %}</li>
+  </ol>
+</nav>
+
+
+ 

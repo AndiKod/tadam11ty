@@ -8,6 +8,11 @@
   <meta name="description" content="Tadam. DevSandbox & 11tyStarter">
   <link rel="icon" type="image/x-icon" href="/assets/img/tadam.svg">
 
+  <link
+    href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    rel="stylesheet"
+  />
+  
   <!--
 *     Edit SCSS in: src/assets/styles.
 *     This page will include the link to the compiled styles.
@@ -15,29 +20,60 @@
 
 <link rel="stylesheet" href="/css/style.css">
 
+  <!-- Tailwindcss
+*  Use the Play CDN to try Tailwind right in the browser
+*  https://tailwindcss.com/docs/installation/play-cdn
+-->
+
+<link rel="stylesheet" href="/css/tw.css">
 
   <script src="/assets/js/main.js" defer></script>
 </head>
 <body>
-  
-<header class="home-header">
+  <header class="flex justify-between items-center p-1 bg-dark-300">
+  <a href="/" class="logo">Tadam</a>
+  <a href="/blog/">Docs</a>
+  <a href="https://github.com/AndiKod/tadam11ty">
+    <img src=" /assets/img/github.svg" alt="GitHub"/>
+  </a>
+</header>
+
+
+  <main class="tmpl-home">
+    
+
+<header class="home-header text-center">
   <a href="/" class="logo">
     <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" alt="Tadam" >
   </a>
   <hgroup>
     <h1 hidden>Tadam</h1>
-    <h2>DevSandbox—11ty3 Starter</h2>
+    <h2>DevSandbox — 11ty3 KitchenSink</h2>
   </hgroup>
   <a href="https://github.com/AndiKod/tadam11ty">
     <img src=" /assets/img/github.svg" alt="GitHub"/>
   </a>
 </header>
 
-  <main class="tmpl-home">
-    
-  <p>
-    13 CSS flavors, 18 JS libraries, solid defaults and startKit.
+  <p class="text-yellow-500 font-bold text-2xl">
+    13 CSS flavors, 18 JS libraries, code snippets and startKit.
   </p>
+
+  <ul>
+    
+    <li>Blue</li>
+    
+    <li>Purple</li>
+    
+    <li>Pearl</li>
+    
+    <li>Yellow</li>
+    
+  </ul> 
+  
+
+
+
 
 
   </main>

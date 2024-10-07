@@ -13,13 +13,12 @@
     rel="stylesheet"
   />
   
+  {% include 'pkg/bulma.njk' %}
   {% include 'pkg/scss.njk' %}
-  {% include 'pkg/tailwind.njk' %}
 
   <script src="{{ '/assets/js/main.js' | url }}" defer></script>
 </head>
 <body>
-  {% include 'components/header.njk' %}
   <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
     {{ content | safe }}
   </main>

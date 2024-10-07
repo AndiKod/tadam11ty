@@ -4,6 +4,10 @@
 *         add {% include 'pkg/scss.njk' %}
 */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&display=swap");
+body {
+  margin: 0;
+}
+
 :root {
   --color-bg: #1e1c1b;
   --color-text: #f4ece8;
@@ -104,6 +108,10 @@ a:visited {
 .tmpl-home, .tmpl-post {
   width: 90vw;
   margin: 0 auto;
+}
+
+:root {
+  --bulma-primary: tomato;
 }
 
 /*# sourceMappingURL=style.css.map */

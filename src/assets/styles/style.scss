@@ -3,7 +3,7 @@
 *  Usage: In _includes/layouts/base.njk'<head>
 *         add {% include 'pkg/scss.njk' %}
 */
-
+@import '_reset.scss';
 @import '_variables.scss';
 @import '_typography.scss';
 @import '_layout.scss';
@@ -14,3 +14,8 @@
   width: 90vw;
   margin: 0 auto;
 }
+
+:root {
+  --bulma-primary: tomato;
+}
+

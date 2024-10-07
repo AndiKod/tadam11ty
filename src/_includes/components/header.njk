@@ -1,13 +1,8 @@
-
-<header class="home-header">
-  <a href="{{"/" | url}}" class="logo">
-    <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" alt="Tadam" >
-  </a>
-  <hgroup>
-    <h1 hidden>{{ metadata.title }}</h1>
-    <h2>{{ metadata.tagline }}</h2>
-  </hgroup>
+<header class="flex justify-between items-center p-1 bg-dark-300">
+  <a href="{{"/" | url}}" class="logo">Tadam</a>
+  <a href="{{ "/blog/" }}">Docs</a>
   <a href="https://github.com/AndiKod/tadam11ty">
     <img src="{{ " /assets/img/github.svg" | url }}" alt="GitHub"/>
   </a>
 </header>
+

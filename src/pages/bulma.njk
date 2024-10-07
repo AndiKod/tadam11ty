@@ -1,0 +1,26 @@
+---
+title: "Tadam11ty"
+layout: "/layouts/bulma.njk"
+permalink: "/bulma/"
+foo: ["one", "two"]
+eleventyNavigation:
+  key: Mammals
+---
+
+<section class="section">
+  <h2 class="title is-2 has-text-primary">Bulma</h2>
+
+  {% highlight "js" %}
+  function myFunction() {
+    return true;
+  }
+  {% endhighlight %}
+
+  <img src="{{ dogo.message }}" alt="Dog">
+   
+
+  {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+
+</section>
+
+  

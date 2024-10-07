@@ -2,29 +2,32 @@
   "name": "Tadam!",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "clean": "rimraf _site",
     "w:sass": "sass --watch src/assets/styles:_site/css",
     "b:sass": "sass src/assets/styles:_site/css",
     "w:eleventy": "eleventy --serve --quiet",
     "b:eleventy": "eleventy",
-    "w:windi": "cross-env  postcss src/assets/styles/windi.css -o _site/css/windi.css -w",
-    "b:windi": "cross-env postcss src/assets/styles/windi.css -o _site/css/windi.css",
-    "dev": "cross-env NODE_ENV=development npm-run-all b:sass b:eleventy --parallel w:sass w:eleventy w:windi",
-    "build": "cross-env NODE_ENV=production npm-run-all clean b:sass b:eleventy b:windi"
+    "w:tw": "npx tailwindcss -i src/assets/styles/tw.css -o _site/css/tw.css -w",
+    "b:tw": "npx tailwindcss -i src/assets/styles/tw.css -o _site/css/tw.css",
+    "dev": "cross-env NODE_ENV=development npm-run-all b:sass b:eleventy --parallel w:sass w:eleventy w:tw",
+    "build": "cross-env NODE_ENV=production npm-run-all clean b:sass b:eleventy b:tw"
   },
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-fetch": "^4.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "netlify-cli": "^9.8.3",
     "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.5",
-    "postcss-cli": "^9.1.0",
-    "postcss-windicss": "^1.0.0",
-    "sass": "^1.47.0"
+    "sass": "^1.47.0",
+    "tailwindcss": "^3.4.13"
   }
 }

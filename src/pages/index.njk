@@ -2,8 +2,31 @@
 title: "Tadam11ty"
 layout: "home"
 permalink: "/"
+eleventyNavigation:
+  key: Home
 ---
 
-  <p>
-    13 CSS flavors, 18 JS libraries, solid defaults and startKit.
+<header class="home-header text-center">
+  <a href="{{"/" | url}}" class="logo">
+    <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" alt="Tadam" >
+  </a>
+  <hgroup>
+    <h1 hidden>{{ metadata.title }}</h1>
+    <h2>{{ metadata.tagline }}</h2>
+  </hgroup>
+  <a href="https://github.com/AndiKod/tadam11ty">
+    <img src="{{ " /assets/img/github.svg" | url }}" alt="GitHub"/>
+  </a>
+</header>
+
+  <p class="text-yellow-500 font-bold text-2xl">
+    13 CSS flavors, 18 JS libraries, code snippets and startKit.
   </p>
+
+  <ul>
+    {% for color in colors %}
+    <li>{{ color.Color }}</li>
+    {% endfor %}
+  </ul> 
+  
+

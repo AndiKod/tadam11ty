@@ -3,7 +3,7 @@
  <p align="center">
     <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">  
  </p>
- <h2 align="center">📦 DevSandbox — 11tyStarter 🚀</h2>
+ <h2 align="center">📦 DevSandbox — 11ty3.Starter 🚀</h2>
 <p align="center">13 CSS flavors, 18 JS libraries, solid defaults and startKit.</p>
 
 <p>The whole thing is mainly based on the [Eleventy](https://www.11ty.dev) v3.0+ static site generator, with some [Nunjucks](https://mozilla.github.io/nunjucks/) templating, and [Sass](https://sass-lang.com/) for styling. A few more CSS and JS libraries are included, but you can easily remove them if you don't need them.</p>
@@ -32,33 +32,33 @@ The usual steps...
 ```
 git clone https://github.com/AndiKod/tadam11ty.git my-proj
 cd my-proj
-yarn       // works too with pnpm and npm, sure
-yarn dev   // See you on port :8080
+pnpm i       // works too with yarn and npm, sure
+pnpm run dev   // See you on port :8080
 ```
 ### Folder structure seen from the package.json root level:<br>
-  **/libs**  Contains the Eleventy extensions. Filters, Shortcodes, Paired<br>
+  **/lib**  Contains the Eleventy extensions. Filters, Shortcodes, Paired<br>
   **/src/_includes**  Contains the /components, /layouts and sandbox /pkg<br>
   **/src/assets**  Contains the /js, /styles and /images containers<br>
   **/src/collections**  Contains the /posts, /books, /whatever collections<br>
   **/src/pages**  Contains the pages, with a *permalink* tag in their frontmatter<br><br>
 
-  `yarn build` will create the **/_site** folder with your Awesome project inside
+  `pnpm run build` will create the **/_site** folder with your Awesome project inside
+
+
 
 
 <br>
 
 
-# The Sandbox libstore 🎁
+# The Sandbox CDN libstore, pre configured links 🎁
 
-Heard that AlpineJS is cool and need some default styling while testing? Make a new page, in the &lt;head> section throw the links, and have fun.
+Heard that AlpineJS is cool and need some default styling while testing? Make a new page, in the &lt;head> section add the links, and have fun.
 You can always yarn/npm install things later if needed, or just keep exploring new things.
 
 ```
 {% include 'pkg/alpine.njk' %}
-{% include 'pkg/bulma.njk' %}
+{% include 'pkg/bulma.njk' %}   // or tailwind, unocss, bootstrap, ...
 ```
-Tip: You can setup two Tadams on your machine. The "for production" project, and a sandbox dedicated one to try concepts in it.
-
 
 <br><br>
 
@@ -74,43 +74,48 @@ You sometimes just need some basic styling while working on things like getting 
 ### Installed out of the box
 
 - [SASS]() already included<br>
-CSS with super powers.
-- [WindiCSS]() already included<br>
-Next generation utility-first CSS framework.<br>
-Tailwind compatible syntax, plus other features.
+CSS with super powers, or great Vanilla CSS.
+- [TailwindCSS]() already included<br>
+The classic utility-first CSS framework.<br>
+
 
 ### Alternative CSS frameworks
 
-Utility first and similar approaches
+#### The classics
 
-- [Tachyons](http://tachyons.io/docs/)
-Built for designing. *...with as little css as possible.*
-- [Tailwind](https://tailwindcss.com/docs/installation/play-cdn)
-The "Play CDN" setup for testing and prototyping
+- [Bootstrap](https://getbootstrap.com)<br>
+World’s most popular front-end toolkit
+- [Bulma](https://bulma.io/documentation/)<br>
+The modern CSS framework that just works.
+- [UIKit](https://getuikit.com/docs/introduction)<br>
+Lightweight and modular front-end framework
+- [Foundation for Sites](https://get.foundation/sites/docs/)<br>
+Advanced responsive front-end framework
+
+#### Utility first and similar approaches
+
 - [OpenProps](https://open-props.style/#getting-started)
 Supercharged CSS variables
+- [Tachyons](http://tachyons.io/docs/)
+Built for designing. *...with as little css as possible.*
+- [Tailwind-CDN](https://tailwindcss.com/docs/installation/play-cdn)
+The "Play CDN" setup for testing and prototyping
 
-No classes, Just raw HTML
+#### No classes, Just raw HTML
+
 - [Water.css](https://watercss.kognise.dev)
 A drop-in collection of CSS styles
 - [MVP.css](https://andybrewer.github.io/mvp/#docs)
 A minimalist stylesheet for HTML elements
 
-Minimalist frameworks
+#### Minimalist frameworks
+
 - [Milligram](https://milligram.io)<br>
 A minimalist CSS framework
 - [Chota](https://jenil.github.io/chota/)
 A micro (~3kb) CSS framework.
 
-The classics
-- [Bootstrap](https://getbootstrap.com)<br>
-World’s most popular front-end toolkit
-- [Foundation for Sites](https://get.foundation/sites/docs/)<br>
-Advanced responsive front-end framework
-- [Bulma](https://bulma.io/documentation/)<br>
-The modern CSS framework that just works.
-- [UIKit](https://getuikit.com/docs/introduction)<br>
-Lightweight and modular front-end framework
+
 
 
  </details>
@@ -169,9 +174,13 @@ It helps with formatting input text content automatically.
 
 # Eleventy extensions collection 🔧
 
-To keep the `.eleventy.js` clean, all the functions are stored in the *lib* folder, like `lib/shortcodes/youtube.js`. In case we need something, a single line in the config file will activate it:
+To keep the `eleventy.config.js` clean, all the functions are stored in the *lib* folder, like `lib/shortcodes/youtube.js`. In case we need something, import and activate it:
 
-```eleventyConfig.addShortcode('YouTube', require('./lib/shortcodes/youtube'));```
+```js
+import Youtube from './lib/shortcodes/youtube.js';
+
+eleventyConfig.addShortcode('YouTube', YouTube);
+```
 
 Now we can use in pages/layouts:
 
@@ -260,4 +269,4 @@ When ready to publish, make your repository Public if actually private, place yo
 
 <br><br>
 
-Contact: andrei@andikod.fr
+Contact: see you on Github
