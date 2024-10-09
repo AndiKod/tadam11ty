@@ -4,8 +4,8 @@
     <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" style="width:20vw" alt="alternate text">  
  </p>
  <h2 align="center">📦 DevSandbox — 11ty3.Starter/KitchenSink 🚀</h2>
-<p align="center">Multiple CSS flavors, JS libraries, code snippets and startKit.<br>
-You can copy-paste some parts into a new project, test/prototype, or remove what you don't need and go on.</p>
+<p align="center">Multiple CSS flavors, JS libraries, code snippets and startKit.<br><br>
+You can copy-paste some parts into a new project, test/prototype, or remove what you don't need.</p>
 
 _An obvious evolving project, as I'm considering what to add/remove next._
 
@@ -35,9 +35,11 @@ The usual prefered steps...
 ```
 git clone https://github.com/AndiKod/tadam11ty.git my-proj
 cd my-proj
+
 pnpm i       // works too with yarn and npm, sure
 pnpm run dev   // See you on port :8080
 ```
+
 ### Folder structure seen from the package.json root level:<br>
   **/lib**  Contains the Eleventy extensions. Filters, Shortcodes, Paired<br>
   **/src/_includes**  Contains the /components, /layouts and sandbox /pkg<br>
@@ -55,12 +57,12 @@ pnpm run dev   // See you on port :8080
 
 # The Sandbox CDN libstore, pre configured links 🎁
 
-Heard that AlpineJS is cool and need some default styling while testing? Make a new page, in the &lt;head> section add the links, and have fun.
+Tempted to give AlpineJS a try and need some default styling while testing? Make a new page, in the &lt;head> section add the links, and have fun.
 You can always yarn/npm install things later if needed, or just keep exploring new things.
 
 ```
 {% include 'pkg/alpine.njk' %}
-{% include 'pkg/bulma.njk' %}   // or tailwind, unocss, bootstrap, ...
+{% include 'pkg/bulma.njk' %}   // or tailwind, bootstrap, ...
 ```
 
 <br><br>
@@ -86,10 +88,10 @@ The classic utility-first CSS framework.<br>
 
 #### The classics
 
-- [Bootstrap](https://getbootstrap.com)<br>
-World’s most popular front-end toolkit
 - [Bulma](https://bulma.io/documentation/)<br>
 The modern CSS framework that just works.
+- [Bootstrap](https://getbootstrap.com)<br>
+World’s most popular front-end toolkit
 - [UIKit](https://getuikit.com/docs/introduction)<br>
 Lightweight and modular front-end framework
 - [Foundation for Sites](https://get.foundation/sites/docs/)<br>

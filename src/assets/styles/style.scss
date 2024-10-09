@@ -1,8 +1,5 @@
-/*
-*  Docs: https://windicss.org/features/
-*  Usage: In _includes/layouts/base.njk'<head>
-*         add {% include 'pkg/scss.njk' %}
-*/
+@import "https://unpkg.com/open-props";
+
 @import '_reset.scss';
 @import '_variables.scss';
 @import '_typography.scss';
@@ -12,10 +9,10 @@
 
 .tmpl-home, .tmpl-post {
   width: 90vw;
-  margin: 0 auto;
+  margin-inline: 0 auto;
 }
 
-:root {
-  --bulma-primary: tomato;
+/* Colors from OpenProps */
+.vert {
+  color: var(--lime-8);
 }
-

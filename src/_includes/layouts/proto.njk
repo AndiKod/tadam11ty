@@ -4,25 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
-  <meta name="description" contenTadam. DevSandbox & 11tyStarter">
-  <meta name="generator" content="{{ eleventy.generator }}">
+  <title>{% if title %}{{ title }}{% else %} Frontend Sandbox{% endif %}</title>
+  <meta name="description" content="Frontend Sandbox">
   <link rel="icon" type="image/x-icon" href="{{ "/assets/img/tadam.svg" | url }}">
-
-  <link
-    href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
-    rel="stylesheet"
-  />
-  
-  {% include 'pkg/scss.njk' %}
-  {# {% include 'pkg/tailwind.njk' %} #}
+  <!-- Use that layout to prototype things using CDN packages -->
   {% block pkg %}{% endblock pkg %}
-
   <script src="{{ '/assets/js/main.js' | url }}" defer></script>
 </head>
-<body>
- 
+<body {% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
   {{ content | safe }}
-   
 </body>
 </html>

@@ -1,0 +1,33 @@
+---
+title: "Proto"
+permalink: "/proto/"
+layout: "layouts/proto.njk"
+---
+<!-- Use the Proto layout to prototype things using CDN packages -->
+<!-- All options in src/_includes/pkg folder -->
+{% block pkg %}
+ {% include 'pkg/bulma.njk' %}
+ {% include 'pkg/openprops.njk' %}
+{% endblock pkg %}
+
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <h1 class="title">{{ title }}</h1>
+    <p class="subtitle">Hero subtitle.</p>
+    <say-hello></say-hello>
+  </div>
+</section>
+
+
+
+<style>
+  .title {
+    color: var(--pink-6);
+  }
+</style>
+
+
+  

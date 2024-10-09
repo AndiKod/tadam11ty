@@ -6,11 +6,11 @@ eleventyNavigation:
   key: Home
 ---
 
-<header class="home-header text-center">
-  <a href="{{"/" | url}}" class="logo">
+<header class="home-header text-center flex justify-center items-center flex-col"> 
+  <a href="{{"/" | url }}" class="logo">
     <img src="https://mediastore-sable.vercel.app/tadam/tadam11ty.png" alt="Tadam" >
   </a>
-  <hgroup>
+  <hgroup class="p-8">
     <h1 hidden>{{ metadata.title }}</h1>
     <h2>{{ metadata.tagline }}</h2>
   </hgroup>
@@ -19,14 +19,10 @@ eleventyNavigation:
   </a>
 </header>
 
-  <p class="text-yellow-500 font-bold text-2xl">
-    13 CSS flavors, 18 JS libraries, code snippets and startKit.
+  <p class="vert font-bold text-xl mt-8">
+    CSS flavors, JS libraries, Snippets and more.
   </p>
 
-  <ul>
-    {% for color in colors %}
-    <li>{{ color.Color }}</li>
-    {% endfor %}
-  </ul> 
+
   
 

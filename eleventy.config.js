@@ -1,5 +1,6 @@
 // --- Imports ---
 
+// Needed for Environement Variables
 import 'dotenv/config';
 
 // Navigation - https://www.11ty.dev/docs/plugins/navigation/
@@ -7,7 +8,8 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 // Syntax Highlighting - https://www.11ty.dev/docs/plugins/syntaxhighlight/
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
-// Nunjuck filters for the Blog functionality
+
+// Nunjuck filters for the Blog/Collections functionality
 import limit from './lib/filters/arr-res-limit.js';
 import readableDate from './lib/filters/readableDate.js';
 import YouTube from './lib/shortcodes/youtube.js';
@@ -19,6 +21,7 @@ export default async function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
+
 
   // --- SASS compilation on save ---
   // Re compile 11ty on scss changes saved
@@ -32,7 +35,6 @@ export default async function(eleventyConfig) {
   // Alias `layout: post` to `layout: layouts/post.njk` ...
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
   eleventyConfig.addLayoutAlias("home", "layouts/home.njk");
-  eleventyConfig.addLayoutAlias("uno", "layouts/uno.njk");
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   // --- Shortcodes ---

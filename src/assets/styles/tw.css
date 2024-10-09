@@ -14,7 +14,7 @@ h2 {
 
 .tmpl-home, .tmpl-post {
   width: 90vw;
-  margin: 0 auto;
+  margin-inline: 0 auto;
 }
 
 

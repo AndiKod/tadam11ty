@@ -1,4 +1,5 @@
-
+// Grabbing data from https://www.nocodb.com/docs
+// with the API token from the .env file
 export default async function () {
 	const options = {
     method: 'GET',
@@ -17,3 +18,12 @@ export default async function () {
   return colors;
 
 };
+
+/**
+ * Then, in any template, you can use it like this:
+ * 
+ * {% for color in colors %}
+    <li>{{ color.Color }}</li>
+   {% endfor %}
+ * 
+ */
