@@ -1,11 +1,12 @@
+/* Import partials */
+@use '_reset.scss';
+@use '_variables.scss';
+@use '_typography.scss';
+@use '_layout.scss';
+@use '_colors.scss';
+
+/* OpenProps¨- http://open-props.style */
 @import "https://unpkg.com/open-props";
-
-@import '_reset.scss';
-@import '_variables.scss';
-@import '_typography.scss';
-@import '_layout.scss';
-@import '_colors.scss';
-
 
 .tmpl-home, .tmpl-post {
   width: 90vw;
@@ -13,6 +14,6 @@
 }
 
 /* Colors from OpenProps */
-.vert {
-  color: var(--lime-8);
+.mint {
+  color: var(--green-9);
 }
